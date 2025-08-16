@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portfolio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="d-flex justify-content-center align-items-center">
+        <div style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); z-index: 1030;">
+            <nav class="navbar navbar-expand bg-primary border-success rounded-start-5 rounded-end-5" data-bs-theme="dark">
+                <div id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link rounded-start-5" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index" asp-fragment="about">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+                            <div class="dropdown-menu border-success">
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project1">Project 1</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project2">Project 2</a>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project3">Project 3</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project4">Project 4</a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded-end-5" asp-controller="Home" asp-action="Index" asp-fragment="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>  
+        </nav>
+        </div>
+    </header>
+    @* <header class="d-flex justify-content-center">
+        <div style="position: fixed; top: 0; left: 50%; transform: translateX(-50%); z-index: 1030;">
+            <nav class="bg-primary rounded-start-5 rounded-end-5" style="display:inline-block; padding:0.25rem 1rem;" data-bs-theme="dark">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#projects">Projects</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> *@
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - Portfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
