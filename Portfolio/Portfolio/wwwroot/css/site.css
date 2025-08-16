@@ -1,0 +1,79 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.nav-link {
+    color: var(--bs-secondary) !important;
+}
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--bs-white) !important;
+    }
+.dropdown-item {
+    color: var(--bs-secondary) !important;
+}
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: white !important;
+    }
+.shining-text {
+    font-weight: bold;
+    background: linear-gradient( 90deg, var(--bs-success), var(--bs-white), var(--bs-success) );
+    /*background: linear-gradient(90deg, #e0e0e0, #ffffff, #e0e0e0);*/
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+.shining-underline {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient( 90deg, var(--bs-success), var(--bs-white), var(--bs-success) );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+}
+
+    .shining-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px; /* thickness of underline */
+        width: 100%;
+        background: linear-gradient( 90deg, var(--bs-success), var(--bs-white), var(--bs-success) );
+        background-size: 200% 100%;
+        animation: shine 4s linear infinite;
+    }
+
+@keyframes shine {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}
