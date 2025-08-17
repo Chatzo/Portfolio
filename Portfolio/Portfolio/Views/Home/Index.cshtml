@@ -1,45 +1,189 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Home Page";
 }
 
 <div class="text-start p-2" style="min-height: 40rem; margin-top: 10rem;">
-    <span id="typed_headline" class="text-white d-inline-flex align-items-center" style="height: 3rem;">
-    </span>
-    <span id="typed_description" class="text-white">
+	<span id="typed_headline" class="text-white d-inline-flex align-items-center" style="height: 3rem;">
+	</span>
+	<span id="typed_description" class="text-white">
 
-    </span>
+	</span>
 </div>
 
 <section id="about" class="container py-5">
-    <h3>#<span class="text-white">About me</span></h3>
-    <div class="row align-items-center">
+	<h3>#<span class="text-white">About me</span></h3>
+	<div class="row align-items-center">
+		<div class="row mb-3">
+			<div class="col-md-2 d-flex justify-content-center align-items-center" style="min-height: 15rem; overflow:auto;">
+				<img src="~/images/rund profiilbild.png" alt="Profilbild" class="img-fluid rounded-circle shadow-lg border border-success" />
+			</div>
 
-        <div class="card col-md-6 border-success">
-            <img src="your-image.jpg" alt="Georgios Chatzoglakis" class="img-fluid rounded-circle shadow-lg">
-        </div>
-
-        <div class="card col-md-6 border-success">
-            <h2 class="display-4 text-primary">Hi, I'm Georgios Chatzoglakis</h2>
-            <p class="lead">
-                Full-stack developer passionate about building applications that improve lives through technology.
-            </p>
-            <p>
-                Currently focusing on web development with Next.js, exploring AI, and building innovative solutions.
-            </p>
-            <ul class="list-unstyled">
-                <li><strong>Tech Stack:</strong> React, Next.js, Tailwind CSS, TypeScript, Docker, PostgreSQL</li>
-                <li><strong>Current Project:</strong> Building innovative solutions at Elroy & Co.</li>
-            </ul>
-        </div>
-    </div>
+			<div class="card col-md-10 border-success rounded-5" style="min-height: 15rem; max-height: 15rem;">
+				<p class="fs-5 fw-bold text-white">Georgios Chatzoglakis</p>
+				<p class="lead">
+					Full-stack developer passionate about building applications that improve lives through technology.
+				</p>
+				<p>
+					Currently focusing on web development with Next.js, exploring AI, and building innovative solutions.
+				</p>
+				<ul class="list-unstyled">
+					<li><strong>Tech Stack:</strong> React, Next.js, Tailwind CSS, TypeScript, Docker, PostgreSQL</li>
+					<li><strong>Current Project:</strong> Building innovative solutions at Elroy & Co.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<div class="card col-md-12 border-success rounded-5" style="min-height: 8rem; max-height: 8rem; overflow: hidden;">
+				<p class="fs-5 fw-bold text-white mb-0">Tech stack</p>
+				<div class="tech-marquee-wrapper rounded-5">
+					<div class="tech-marquee d-flex align-item-start">
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+							<p class="fs-6 text-white m-0">C#</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+							<p class="fs-6 text-white m-0">C++</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+							<p class="fs-6 text-white m-0">JAVA</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+							<p class="fs-6 text-white m-0">.NET</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
+							<p class="fs-6 text-white m-0">UNITY</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+							<p class="fs-6 text-white m-0">JAVASCRIPT</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+							<p class="fs-6 text-white m-0">HTML</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+							<p class="fs-6 text-white m-0">CSS</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+							<p class="fs-6 text-white m-0">BOOTSTRAP</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+							<p class="fs-6 text-white m-0">JQUERY</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+							<p class="fs-6 text-white m-0">AZURE</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+							<p class="fs-6 text-white m-0">SQL</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+							<p class="fs-6 text-white m-0">GIT</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+							<p class="fs-6 text-white m-0">GITHUB</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitkraken/gitkraken-original.svg" />
+							<p class="fs-6 text-white m-0">GITKRAKEN</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+							<p class="fs-6 text-white m-0">C#</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+							<p class="fs-6 text-white m-0">C++</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+							<p class="fs-6 text-white m-0">JAVA</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
+							<p class="fs-6 text-white m-0">.NET</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
+							<p class="fs-6 text-white m-0">UNITY</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+							<p class="fs-6 text-white m-0">JAVASCRIPT</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+							<p class="fs-6 text-white m-0">HTML</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+							<p class="fs-6 text-white m-0">CSS</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+							<p class="fs-6 text-white m-0">BOOTSTRAP</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+							<p class="fs-6 text-white m-0">JQUERY</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
+							<p class="fs-6 text-white m-0">AZURE</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+							<p class="fs-6 text-white m-0">SQL</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+							<p class="fs-6 text-white m-0">GIT</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+							<p class="fs-6 text-white m-0">GITHUB</p>
+						</div>
+						<div class="tech-item text-center me-5">
+							<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitkraken/gitkraken-original.svg" />
+							<p class="fs-6 text-white m-0">GITKRAKEN</p>
+						</div>
+						<div class="tech-item spacer d-block d-sm-none" style="width: 6rem;"></div>  <!-- xs -->
+						<div class="tech-item spacer d-none d-sm-block d-md-none" style="width: 7rem;"></div> <!-- sm -->
+						<div class="tech-item spacer d-none d-md-block" style="width: 9rem;"></div> <!-- md and up -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row mb-3">
+			<div class="card col-md-8 border-success rounded-5" style="min-height: 15rem; max-height: 15rem;">
+				<p class="fs-5 fw-bold text-white">Github</p>
+				<img alt="GitHub commit chart" class="img-fluid" src="https://ghchart.rshah.org/?user=Chatzo&bg_color=dc3545&color=198754" />
+				<p class="fs-5 fw-bold text-black">GitHub Contributions</p>
+				<div id="github"></div>
+			</div>
+			<div class="card col-md-4 border-success rounded-5" style="min-height: 15rem; max-height: 15rem;">
+				<p class="fs-5 fw-bold text-white">Values</p>
+			</div>
+		</div>
+	</div>
 </section>
 <section id="projects" class="container py-5">
-    <h3>#<span class="text-white">Projects</span></h3>
-    <div id="project1">project 1</div>
-    <div id="project2">project 2</div>
-    <div id="project3">project 3</div>
-    <div id="project4">project 4</div>
+	<h3>#<span class="text-white">Projects</span></h3>
+	<div id="project1">project 1</div>
+	<div id="project2">project 2</div>
+	<div id="project3">project 3</div>
+	<div id="project4">project 4</div>
 </section>
 <section id="contact" class="container py-5">
-    <h3>#<span class="text-white">Contact</span></h3>
+	<h3>#<span class="text-white">Contact</span></h3>
 </section>

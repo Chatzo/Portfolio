@@ -77,3 +77,26 @@ body {
         background-position: 200% 0;
     }
 }
+.tech-marquee-wrapper {
+    overflow: hidden;
+}
+.tech-marquee {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tech-item i {
+    display: block;
+    margin-bottom: 0.25rem;
+}
