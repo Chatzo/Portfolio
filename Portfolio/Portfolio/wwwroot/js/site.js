@@ -12,19 +12,29 @@
                         typeSpeed: 35,
                         showCursor: false,
 
-                        onComplete: function () {
-                            setTimeout(() => {
-                                document.getElementById('typed_headline').innerHTML = '';
-                                document.getElementById('typed_description').innerHTML = '';
-                                startTypedSequence();
-                            }, 2000);
-                        }
+                        //onComplete: function () {
+                        //    setTimeout(() => {
+                        //        document.getElementById('typed_headline').innerHTML = '';
+                        //        document.getElementById('typed_description').innerHTML = '';
+                        //        startTypedSequence();
+                        //    }, 2000);
+                        //}
                     });
                 }
             });
         }
-
+       
         startTypedSequence();
     }
+    //function gitContributions() {
+    //    fetch('https://api.github.com/users/Chatzo')
+    //        .then(res => res.json())
+    //        .then(data => {
+    //            document.getElementById('github-contributions').textContent =
+    //                `Contributions last year: ${data.public_repos + data.followers} (wrong number)`;
+    //        });
+    //}
+
+    //gitContributions();
    
 });

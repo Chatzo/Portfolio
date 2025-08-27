@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Portfolio.Models.ContactFormModel
+
+@{
 	ViewData["Title"] = "Home Page";
 }
 
@@ -12,18 +14,30 @@
 
 <section id="about" class="container py-5">
 	<h3>#<span class="text-white">About me</span></h3>
-	<div class="row  m-0 p-0 mb-3">
+	<div class="row m-0 p-0 mb-3 align-items-stretch">
 		<div class="col-md-2 d-flex justify-content-center align-items-center" style="min-height: 15rem; overflow:auto;">
 			<img src="~/images/rund profiilbild.png" alt="Profilbild" class="img-fluid rounded-circle shadow-lg border border-success" />
 		</div>
 
-		<div class="card col-md-10 border-success rounded-5" style="min-height: 15rem; max-height: 15rem;">
+		<div class="card col-xl-7 border-success rounded-5 p-2 d-flex flex-column" style="min-height: 15rem;">
 			<p class="fs-5 fw-bold text-white">Georgios Chatzoglakis</p>
 			<p class="lead">
 				Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
 				bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
 				bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
 			</p>
+		</div>
+		<div class="col-xl-3 m-0 p-0 ps-xl-3 mt-3 mt-xl-0 d-flex" style="position:relative;">
+			<div class="card border border-success rounded-5 p-0 m-0 ps-0 pt-2 flex-fill">
+				<p class="fs-5 fw-bold ps-3 text-white">Personal values</p>
+				<ul class="fs-6 fw-bold text-white">
+					<li>Honesty - <span class="fw-normal fs-6">Above all.</span></li>
+					<li>Justice - <span class="fw-normal fs-6">Equal chances.</span></li>
+					<li>Creative - <span class="fw-normal fs-6">Oppertunity to explore.</span></li>
+					<li>Compassion - <span class="fw-normal fs-6">Being there for someone.</span></li>
+					<li>Honorable - <span class="fw-normal fs-6">Be true to your word.</span></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<div class="row  m-0 p-0 mb-3">
@@ -159,9 +173,8 @@
 		</div>
 	</div>
 	<div class="row m-0 p-0 mb-3" style="position:relative;">
-		<div class="card p-0 m-0 col-md-9 border border-success rounded-5" style="position:relative;">
-			<a class="p-0 ps-2 pt-2 m-0" href="https://github.com/Chatzo" target="_blank" style="text-decoration: none;position:relative">
-				<p id="github_contributions" class="fs-5 fw-bold text-white">GitHub contributions (last year):</p>
+		<a class="card project-card p-0 m-0 ps-2 pt-2 col-md-12 border border-success rounded-5" href="https://github.com/Chatzo" target="_blank" style="min-height: 5rem; min-width: 5rem;max-height: 21rem; max-width: 100%;">
+				<p id="github-contributions" class="fs-5 ps-2 fw-bold text-white">GitHub contributions in the last year: @ViewData["GithubContributions"]</p>
 				<div style="position: relative; width: 100%; padding-top: 25%;">
 					<!-- Background: GitHub contributions chart -->
 					<img src="https://ghchart.rshah.org/Chatzo" alt="GitHub Contributions Chart"
@@ -173,28 +186,67 @@
 						 alt="GitHub Snake"
 						 style="display: block; position: absolute; top: -3%; left: 1.5%; width: 100%; pointer-events: none;">
 				</div>
-			</a>
-		</div>
-		<div class="col-md-3 m-0 p-0 ps-md-3 mt-3 mt-md-0" style="position:relative;">
-			<div class="card border border-success rounded-5 p-0 m-0 ps-5 pt-2">
-				<p class="fs-5 fw-bold text-white">Personal values</p>
-				<ul class="fs-5 fw-bold text-white">
-					<li>test</li>
-					<li>test2</li>
-					<li>test3</li>
-				</ul>
-			</div>
-
-		</div>
+			<div class="overlay overlay-bg-anim">Go to Github --></div>
+		</a>
 	</div>
 </section>
 <section id="projects" class="container py-5">
 	<h3>#<span class="text-white">Projects</span></h3>
-	<div id="project1">project 1</div>
-	<div id="project2">project 2</div>
-	<div id="project3">project 3</div>
-	<div id="project4">project 4</div>
+	<div class="row  m-0 p-0 mb-3">
+		<a asp-controller="Projects" asp-action="Details" asp-route-id="1"
+		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+			<div id="project1">project 1</div>
+			<div class="overlay overlay-bg-anim">Read more</div>
+		</a>
+		<a asp-controller="Projects" asp-action="Details" asp-route-id="2"
+		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+			<div id="project1">project 2</div>
+			<div class="overlay overlay-bg-anim">Read more</div>
+		</a>
+		<a asp-controller="Projects" asp-action="Details" asp-route-id="3"
+		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+			<div id="project1">project 3</div>
+			<div class="overlay overlay-bg-anim">Read more</div>
+		</a>
+		<a asp-controller="Projects" asp-action="Details" asp-route-id="4"
+		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+			<div id="project1">project 4</div>
+			<div class="overlay overlay-bg-anim">Read more</div>
+		</a>
+		<a asp-controller="Projects" asp-action="Details" asp-route-id="5"
+		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+			<div id="project1">project 5</div>
+			<div class="overlay overlay-bg-anim">Read more</div>
+		</a>
+		<a asp-controller="Projects" asp-action="Details" asp-route-id="6"
+		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+			<div id="project1">project 6</div>
+			<div class="overlay overlay-bg-anim">Read more</div>
+		</a>
+	</div>
 </section>
+@inject IConfiguration Configuration
 <section id="contact" class="container py-5">
 	<h3>#<span class="text-white">Contact</span></h3>
+	<div class="card p-3 m-0 col-md-12 mb-3 border border-success rounded-5" style="position:relative;">
+		<form action="https://formsubmit.co/@Configuration["FormSubmit:Endpoint"]" method="POST">
+			<div class="mb-3" style="width: 40%">
+				<label for="email" class="form-label">Your email address ( So I can reply to you.)</label>
+				<input type="email" class="form-control bg-dark text-white border border-success" id="email" name="email" required>
+			</div>
+			<div class="mb-3">
+				<label for="message" class="form-label">Message</label>
+				<textarea class="form-control bg-dark text-white border border-success" id="message" name="message" rows="5" required></textarea>
+			</div>
+			<!-- Honeypot (hidden) -->
+			<input type="text" name="_honey" style="display:none">
+
+			<!-- Optional: Redirect after submit -->
+			<input type="hidden" name="_next" value="https://localhost:7038/Home/#contact">
+
+			<div class="d-flex justify-content-end">
+				<button type="submit" class="btn btn-outline-success btn-lg px-5">Send</button>
+			</div>
+		</form>
+	</div>
 </section>
