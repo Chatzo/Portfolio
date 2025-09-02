@@ -1,5 +1,6 @@
 using HtmlAgilityPack;
 using Microsoft.AspNetCore.Mvc;
+using Portfolio.Data;
 using Portfolio.Models;
 using System.Diagnostics;
 using System.Net.Mail;
@@ -18,7 +19,16 @@ namespace Portfolio.Controllers
         {
             var contributions = await GetGithubContributions();
             ViewData["GithubContributions"] = contributions;
+            var projects = ProjectData.Projects;
+            if (projects == null) return NotFound();
             return View();
+
+        }
+        public IActionResult Details(int id)
+        {
+            var project = ProjectData.Projects.FirstOrDefault(p => p.Id == id);
+            if (project == null) return NotFound();
+            return View(project);
         }
         public IActionResult Privacy()
         {

@@ -1,10 +1,10 @@
-﻿@model Portfolio.Models.ContactFormModel
+﻿@using Portfolio.Data
 
 @{
 	ViewData["Title"] = "Home Page";
 }
 
-<div class="text-start p-2" style="min-height: 40rem; margin-top: 10rem;">
+<div class="text-start p-2" style="min-height: 30rem; margin-top: 10rem;">
 	<span id="typed_headline" class="text-white d-inline-flex align-items-center" style="height: 3rem;">
 	</span>
 	<span id="typed_description" class="text-white">
@@ -20,151 +20,51 @@
 		</div>
 
 		<div class="card col-xl-7 border-success rounded-5 p-2 d-flex flex-column" style="min-height: 15rem;">
-			<p class="fs-5 fw-bold text-white">Georgios Chatzoglakis</p>
-			<p class="lead">
-				Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-				bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-				bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.
+			<p class="lead fs-5 text-white mb-1">
+				I always had an interest in coding from when I was young but it's just recenly I started
+				pursuing a career in the area. I have a bachelor degree in Game Design from Uppsala University
+				and I’m currently working on improving my skills in C#/.Net, HTML, CSS and Javacript.
+				<br /><br />
+				🔭 I'm hungry to learn more about AI (like Behaviour Trees, Utility AI and Fuzzy logic),
+				AR/ XR development and maybe Procedural generation or other fun stuff like Boids algorithm or similar.
+				Whether it's creating websites, games or AR applications doesn't matter. I just think its fun to build new things and solve problems.
 			</p>
 		</div>
 		<div class="col-xl-3 m-0 p-0 ps-xl-3 mt-3 mt-xl-0 d-flex" style="position:relative;">
 			<div class="card border border-success rounded-5 p-0 m-0 ps-0 pt-2 flex-fill">
-				<p class="fs-5 fw-bold ps-3 text-white">Personal values</p>
+				<p class="fs-5 fw-bold ps-3 text-white">Personality</p>
 				<ul class="fs-6 fw-bold text-white">
-					<li>Honesty - <span class="fw-normal fs-6">Above all.</span></li>
-					<li>Justice - <span class="fw-normal fs-6">Equal chances.</span></li>
-					<li>Creative - <span class="fw-normal fs-6">Oppertunity to explore.</span></li>
-					<li>Compassion - <span class="fw-normal fs-6">Being there for someone.</span></li>
-					<li>Honorable - <span class="fw-normal fs-6">Be true to your word.</span></li>
+					<li>Honest - <span class="fw-normal fs-6">Honesty above all.</span></li>
+					<li>Kind - <span class="fw-normal fs-6">Being there for people.</span></li>
+					<li>Problem solver - <span class="fw-normal fs-6">I love solving problems.</span></li>
+					<li>Creative - <span class="fw-normal fs-6">Exploring new ideas.</span></li>
+					<li>Flexible - <span class="fw-normal fs-6">I adapt to any situation.</span></li>
+					<li>Honorable - <span class="fw-normal fs-6">Staying true to my word.</span></li>
+					<li>Just - <span class="fw-normal fs-6">Equal chances for everyone.</span></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<div class="row  m-0 p-0 mb-3">
-		<div class="card col-md-12 border-success rounded-5" style="min-height: 8rem; max-height: 8rem; overflow: hidden;">
-			<p class="fs-5 fw-bold text-white mb-0">Tech stack</p>
-			<div class="tech-marquee-wrapper rounded-5">
+		<div class="card col-md-12 border-success rounded-5" style="min-height: 6rem; max-height: 6rem; overflow: hidden;">
+			<div class="tech-marquee-wrapper rounded-5 mt-3">
 				<div class="tech-marquee d-flex align-item-start">
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-						<p class="fs-6 text-white m-0">C#</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-						<p class="fs-6 text-white m-0">C++</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-						<p class="fs-6 text-white m-0">JAVA</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
-						<p class="fs-6 text-white m-0">.NET</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
-						<p class="fs-6 text-white m-0">UNITY</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-						<p class="fs-6 text-white m-0">JAVASCRIPT</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-						<p class="fs-6 text-white m-0">HTML</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-						<p class="fs-6 text-white m-0">CSS</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-						<p class="fs-6 text-white m-0">BOOTSTRAP</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
-						<p class="fs-6 text-white m-0">JQUERY</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
-						<p class="fs-6 text-white m-0">AZURE</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-						<p class="fs-6 text-white m-0">SQL</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-						<p class="fs-6 text-white m-0">GIT</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-						<p class="fs-6 text-white m-0">GITHUB</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitkraken/gitkraken-original.svg" />
-						<p class="fs-6 text-white m-0">GITKRAKEN</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-						<p class="fs-6 text-white m-0">C#</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
-						<p class="fs-6 text-white m-0">C++</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
-						<p class="fs-6 text-white m-0">JAVA</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg" />
-						<p class="fs-6 text-white m-0">.NET</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg" />
-						<p class="fs-6 text-white m-0">UNITY</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-						<p class="fs-6 text-white m-0">JAVASCRIPT</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-						<p class="fs-6 text-white m-0">HTML</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-						<p class="fs-6 text-white m-0">CSS</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
-						<p class="fs-6 text-white m-0">BOOTSTRAP</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
-						<p class="fs-6 text-white m-0">JQUERY</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" />
-						<p class="fs-6 text-white m-0">AZURE</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
-						<p class="fs-6 text-white m-0">SQL</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
-						<p class="fs-6 text-white m-0">GIT</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-						<p class="fs-6 text-white m-0">GITHUB</p>
-					</div>
-					<div class="tech-item text-center me-5">
-						<img style="min-height: 3rem; max-height: 3rem;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitkraken/gitkraken-original.svg" />
-						<p class="fs-6 text-white m-0">GITKRAKEN</p>
-					</div>
+					@foreach (var tech in TechData.Projects)
+					{
+						<div class="tech-item text-center me-5 mb-3">
+							<img style="min-height: 3rem; max-height: 3rem;" src="@tech.ImageUrl" alt="@tech.Name" />
+							<p class="fs-6 text-white m-0">@tech.Name</p>
+						</div>
+					}
+
+					@* repeat for seamless scroll *@
+					@foreach (var tech in TechData.Projects)
+					{
+						<div class="tech-item text-center me-5 mb-3">
+							<img style="min-height: 3rem; max-height: 3rem;" src="@tech.ImageUrl" alt="@tech.Name" />
+							<p class="fs-6 text-white m-0">@tech.Name</p>
+						</div>
+					}
 					<div class="tech-item spacer d-block d-sm-none" style="width: 6rem;"></div>  <!-- xs -->
 					<div class="tech-item spacer d-none d-sm-block d-md-none" style="width: 7rem;"></div> <!-- sm -->
 					<div class="tech-item spacer d-none d-md-block" style="width: 9rem;"></div> <!-- md and up -->
@@ -174,18 +74,18 @@
 	</div>
 	<div class="row m-0 p-0 mb-3" style="position:relative;">
 		<a class="card project-card p-0 m-0 ps-2 pt-2 col-md-12 border border-success rounded-5" href="https://github.com/Chatzo" target="_blank" style="min-height: 5rem; min-width: 5rem;max-height: 21rem; max-width: 100%;">
-				<p id="github-contributions" class="fs-5 ps-2 fw-bold text-white">GitHub contributions in the last year: @ViewData["GithubContributions"]</p>
-				<div style="position: relative; width: 100%; padding-top: 25%;">
-					<!-- Background: GitHub contributions chart -->
-					<img src="https://ghchart.rshah.org/Chatzo" alt="GitHub Contributions Chart"
-						 style="display: block; position: absolute; top: 0%; left: 0%; width: 100%;">
-					<!-- Gray overlay rectangle -->
-					<div style="background-color: var(--bs-card-bg); position: absolute;top: 12%; left: 3%; width: 97%; height: 70%;"></div>
-					<!-- Overlay: Snake animation -->
-					<img src="https://raw.githubusercontent.com/Chatzo/Chatzo/refs/heads/main/dist/github-snake-dark.svg"
-						 alt="GitHub Snake"
-						 style="display: block; position: absolute; top: -3%; left: 1.5%; width: 100%; pointer-events: none;">
-				</div>
+			<p id="github-contributions" class="fs-5 ps-2 fw-bold text-Success">GitHub contributions in the last year: @ViewData["GithubContributions"]</p>
+			<div style="position: relative; width: 100%; padding-top: 25%;">
+				<!-- Background: GitHub contributions chart -->
+				<img src="https://ghchart.rshah.org/Chatzo" alt="GitHub Contributions Chart"
+					 style="display: block; position: absolute; top: 0%; left: 0%; width: 100%;">
+				<!-- Gray overlay rectangle -->
+				<div style="background-color: var(--bs-card-bg); position: absolute;top: 12%; left: 3%; width: 97%; height: 70%;"></div>
+				<!-- Overlay: Snake animation -->
+				<img src="https://raw.githubusercontent.com/Chatzo/Chatzo/refs/heads/main/dist/github-snake-dark.svg"
+					 alt="GitHub Snake"
+					 style="display: block; position: absolute; top: -3%; left: 1.5%; width: 100%; pointer-events: none;">
+			</div>
 			<div class="overlay overlay-bg-anim">Go to Github --></div>
 		</a>
 	</div>
@@ -193,36 +93,31 @@
 <section id="projects" class="container py-5">
 	<h3>#<span class="text-white">Projects</span></h3>
 	<div class="row  m-0 p-0 mb-3">
-		<a asp-controller="Projects" asp-action="Details" asp-route-id="1"
-		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-			<div id="project1">project 1</div>
-			<div class="overlay overlay-bg-anim">Read more</div>
-		</a>
-		<a asp-controller="Projects" asp-action="Details" asp-route-id="2"
-		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-			<div id="project1">project 2</div>
-			<div class="overlay overlay-bg-anim">Read more</div>
-		</a>
-		<a asp-controller="Projects" asp-action="Details" asp-route-id="3"
-		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-			<div id="project1">project 3</div>
-			<div class="overlay overlay-bg-anim">Read more</div>
-		</a>
-		<a asp-controller="Projects" asp-action="Details" asp-route-id="4"
-		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-			<div id="project1">project 4</div>
-			<div class="overlay overlay-bg-anim">Read more</div>
-		</a>
-		<a asp-controller="Projects" asp-action="Details" asp-route-id="5"
-		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-			<div id="project1">project 5</div>
-			<div class="overlay overlay-bg-anim">Read more</div>
-		</a>
-		<a asp-controller="Projects" asp-action="Details" asp-route-id="6"
-		   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-			<div id="project1">project 6</div>
-			<div class="overlay overlay-bg-anim">Read more</div>
-		</a>
+		@foreach (var project in ProjectData.Projects)
+		{
+			<a asp-controller="Home" asp-action="Details" asp-route-id="@project.Id"
+			   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
+				<div style="width:100%; height: 60%;">
+					<img src="@project.ImageUrl" alt="@project.Title"
+						 class="img-fluid w-100 h-100 p-2 object-fit-cover rounded-4">
+				</div>
+
+				<div class="p-3 d-flex flex-column">
+					<div>
+						<h5 class="fw-bold text-success">@project.Title</h5>
+						<p class="mb-1 text-white">@project.Summary</p>
+					</div>
+					<div>
+						@foreach (var tag in project.Tags)
+						{
+							<span class="badge project-tag">@tag</span>
+						}
+					</div>
+				</div>
+
+				<div class="overlay overlay-bg-anim">Read more</div>
+			</a>
+		}
 	</div>
 </section>
 @inject IConfiguration Configuration
@@ -231,11 +126,11 @@
 	<div class="card p-3 m-0 col-md-12 mb-3 border border-success rounded-5" style="position:relative;">
 		<form action="https://formsubmit.co/@Configuration["FormSubmit:Endpoint"]" method="POST">
 			<div class="mb-3" style="width: 40%">
-				<label for="email" class="form-label">Your email address ( So I can reply to you.)</label>
+				<label for="email" class="form-label">Your email address:</label>
 				<input type="email" class="form-control bg-dark text-white border border-success" id="email" name="email" required>
 			</div>
 			<div class="mb-3">
-				<label for="message" class="form-label">Message</label>
+				<label for="message" class="form-label">Message:</label>
 				<textarea class="form-control bg-dark text-white border border-success" id="message" name="message" rows="5" required></textarea>
 			</div>
 			<!-- Honeypot (hidden) -->

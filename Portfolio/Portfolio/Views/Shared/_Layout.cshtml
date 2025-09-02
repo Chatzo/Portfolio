@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Portfolio.Data
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
@@ -23,12 +24,12 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
 						<div class="dropdown-menu border-success">
-							<a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project1">Project 1</a>
-							<a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project2">Project 2</a>
-							<a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project3">Project 3</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" asp-controller="Home" asp-action="Index" asp-fragment="project4">Project 4</a>
-
+							@foreach (var project in ProjectData.Projects)
+							{
+								<a class="dropdown-item" asp-controller="Home" asp-action="Details" asp-route-id="@project.Id">
+									@project.Title
+								</a>
+							}
 						</div>
 					</li>
 					<li class="nav-item">

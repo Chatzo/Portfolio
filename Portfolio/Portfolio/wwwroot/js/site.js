@@ -11,14 +11,6 @@
                         strings: ["<p class='fs-5'>I'm a <span class='shining-underline fs-5'>creative developer</span> based in Stockholm!</p><p class='fs-5'>I believe the future lies in mixed reality applications and AI solutions!</p>"],
                         typeSpeed: 35,
                         showCursor: false,
-
-                        //onComplete: function () {
-                        //    setTimeout(() => {
-                        //        document.getElementById('typed_headline').innerHTML = '';
-                        //        document.getElementById('typed_description').innerHTML = '';
-                        //        startTypedSequence();
-                        //    }, 2000);
-                        //}
                     });
                 }
             });
@@ -26,15 +18,5 @@
        
         startTypedSequence();
     }
-    //function gitContributions() {
-    //    fetch('https://api.github.com/users/Chatzo')
-    //        .then(res => res.json())
-    //        .then(data => {
-    //            document.getElementById('github-contributions').textContent =
-    //                `Contributions last year: ${data.public_repos + data.followers} (wrong number)`;
-    //        });
-    //}
-
-    //gitContributions();
    
 });

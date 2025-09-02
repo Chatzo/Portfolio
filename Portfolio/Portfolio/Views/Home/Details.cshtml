@@ -1,0 +1,30 @@
+﻿@model Portfolio.Data.Project
+
+<div class="container mt-5 p-4">
+    <a asp-controller="Home" asp-action="Index" asp-fragment="projects" class="btn btn-outline-success">
+        &larr; Back
+    </a>
+    <div class="text-center mt-2">
+        <img src="@Model.ImageUrl" class="img-fluid border border-2 border-success rounded-5" />
+        <h1 class="text-success mt-3">@Model.Title</h1>
+        <div class="mb-3">
+            <p class="text-success text-bold m-0">Tech stack:</p>
+            @foreach (var tag in Model.Tags)
+            {
+                <span class="badge project-tag">@tag</span>
+            }
+        </div>
+
+        <p>@Model.Description</p>
+        <a href="@Model.ExternalLink"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn-lg btn-outline-success">
+            Visit project website
+        </a>
+        @if(Model.Id == 1 || Model.Id == 2)
+        {
+            <p class="text-danger">(Azure websites can take long to load due to using free/cheap version)</p>
+        }  
+    </div>
+</div>
