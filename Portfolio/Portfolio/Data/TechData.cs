@@ -53,6 +53,10 @@
                 ImageUrl = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
             },
             new Tech {
+                Name = "xUnit",
+                ImageUrl = "https://xunit.net/logo.svg",
+            },
+            new Tech {
                 Name = "GIT",
                 ImageUrl = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
             },

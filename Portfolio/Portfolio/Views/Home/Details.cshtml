@@ -9,37 +9,40 @@
 			<div class=" carousel-inner">
 				@if (!string.IsNullOrEmpty(Model.VideoUrl))
 				{
-				<div class="carousel-item active">
+					<div class="carousel-item active">
 						<div class="ratio ratio-16x9 border border-2 border-success rounded-5 overflow-hidden" style="margin:auto;">
-						<iframe width="1236" height="695"
-								src=@Model.VideoUrl
-								title=@Model.Title
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerpolicy="strict-origin-when-cross-origin"
-								allowfullscreen>
-						</iframe>
+							<iframe width="1236" height="695"
+									src=@Model.VideoUrl
+									title=@Model.Title
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+									referrerpolicy="strict-origin-when-cross-origin"
+									allowfullscreen>
+							</iframe>
+						</div>
 					</div>
-				</div>
 				}
 				@for (int i = 0; i < Model.Images.Count; i++)
 				{
 					<div class="carousel-item @(string.IsNullOrEmpty(Model.VideoUrl) && i == 0 ? "active" : (string.IsNullOrEmpty(Model.VideoUrl) && i == 0 ? "" : ""))">
 						<div class="ratio ratio-16x9 border border-2 border-success rounded-5 overflow-hidden" style="margin:auto;">
-							<img src="@Model.Images[i]" class="d-block w-100 h-100" style="object-fit:cover;" alt="(Missing Image)">
+							<img src="@Model.Images[i]" class="d-block w-100 h-100" style="object-fit:contain;" alt="(Missing Image)">
 						</div>
 					</div>
 				}
 			</div>
 		</div>
-		<div class="d-flex justify-content-between align-items-center mt-3">
-			<button class="btn btn-success btn-lg fw-bold" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
-				‹ Prev
-			</button>
-			<button class="btn btn-success btn-lg fw-bold" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
-				Next ›
-			</button>
-		</div>
+		@if (Model.Images.Count() > 1 || (!string.IsNullOrEmpty(Model.VideoUrl) && Model.Images.Count() > 0))
+		{
+			<div class="d-flex justify-content-between align-items-center mt-3">
+				<button class="btn btn-success btn-lg fw-bold" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+					‹ Prev
+				</button>
+				<button class="btn btn-success btn-lg fw-bold" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+					Next ›
+				</button>
+			</div>
+		}
 		<div class="mb-3">
 			<p class="text-success text-bold m-0">Tech stack:</p>
 			@foreach (var tag in Model.Tags)
@@ -52,13 +55,15 @@
 			<br />
 			<p class="text-start text-white fs-5">@Model.MyContribution</p>
 		</div>
-		
-		<a href="@Model.ExternalLink"
-		   target="_blank"
-		   rel="noopener noreferrer"
-		   class="btn btn-lg btn-outline-success">
-			Visit project website
-		</a>
+		@if (!string.IsNullOrEmpty(Model.ExternalLink))
+		{
+			<a href="@Model.ExternalLink"
+			   target="_blank"
+			   rel="noopener noreferrer"
+			   class="btn btn-lg btn-success">
+				Visit project website
+			</a>
+		}
 		@if (Model.Id == 1 || Model.Id == 2)
 		{
 			<p class="text-danger">(Azure websites can take long to load due to using free/cheap version)</p>

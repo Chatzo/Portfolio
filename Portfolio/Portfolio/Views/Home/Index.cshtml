@@ -97,7 +97,7 @@
 		{
 			<a asp-controller="Home" asp-action="Details" asp-route-id="@project.Id"
 			   class="card project-card col-md-5 m-0 p-0 ps-lg-3 mt-3 ms-lg-3 p-2 border-success rounded-5">
-				<div style="width:100%; height: 55%;">
+				<div style="width:100%; height: 50%;">
 					@if(project.Images.Count >= 1)
 					{
 						<img src="@project.Images[0]" alt="@project.Title"
@@ -106,7 +106,7 @@
 					
 				</div>
 
-				<div class="p-3 d-flex flex-column">
+				<div class="p-2 d-flex flex-column">
 					<div>
 						<h5 class="fw-bold text-success">@project.Title</h5>
 						<p class="mb-1 text-white">@project.Summary</p>
