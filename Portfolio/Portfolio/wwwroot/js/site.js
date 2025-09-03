@@ -18,5 +18,24 @@
        
         startTypedSequence();
     }
+
+    //Stop YouTube videos safely on slide change
+    const carousel = document.getElementById('mediaCarousel');
+    if (carousel) {
+        carousel.addEventListener('slide.bs.carousel', function () {
+            const iframes = carousel.querySelectorAll('iframe');
+            iframes.forEach(function (iframe) {
+                if (iframe.src.includes('youtube.com/embed')) {
+                    try {
+                        if (iframe.contentWindow) {
+                            iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+                        }
+                    } catch (e) {
+                        console.warn("Could not stop YouTube video:", e);
+                    }
+                }
+            });
+        });
+    }
    
 });
