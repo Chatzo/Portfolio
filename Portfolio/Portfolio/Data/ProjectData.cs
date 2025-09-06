@@ -76,7 +76,7 @@ namespace Portfolio.Data
             new Project {
                 Id = 7,
                 Title = "Sorting Algorithms",
-                Summary = "A collection of sorting algorithms built with test driven development",
+                Summary = "A collection of sorting algorithms built with test driven development.",
                 Description = "A collection of sorting algorithms built with test driven development with xUnit",
                 MyContribution = "I created a binary heap for the heap search. I also created my own called HashBucketSort based on the idea of bucket sort but using dictionaries in a hash-like structure.",
                 Images = new List<string> {"/images/sorting/heap.png","/images/sorting/insertion.png"},
