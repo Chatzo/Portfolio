@@ -2,7 +2,7 @@ name: GitHub Snake
 
 on:
   push:
-    branches: [ main ]
+    branches: [ development ]
     schedule:
     - cron: '0 0 * * *'  # every day at midnight UTC
 
