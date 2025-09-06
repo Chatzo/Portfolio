@@ -21,7 +21,7 @@ namespace Portfolio.Data
             new Project {
                 Id = 2,
                 Title = "Gamma Movies",
-                Summary = "A fake movie webshop using :NET Core",
+                Summary = "A fake movie webshop using .NET Core",
                 Description = "This is a 1-2 week school project. It uses .Net Core and CRUD operations. No logic added for payments and only fake log in use 'admin@admin.se' and 'password' if you want to try it.",
                 MyContribution = "I added some CRUD operations as well as the shopping cart / check out logic and general code for the website.",
                 Images = new List<string> {"/images/gammamovies/gmovies_1.png","/images/gammamovies/gmovies_2.png","/images/gammamovies/gmovies_3.png" },
