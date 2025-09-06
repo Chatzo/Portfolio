@@ -2,23 +2,27 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# Kopiera .csproj och återställ dependencies
-COPY *.csproj ./
-RUN dotnet restore
+# Kopiera hela projektmappen
+COPY . ./Portfolio
 
-# Kopiera resten av koden och builda
-COPY . ./
-RUN dotnet publish -c Release -o out
+# Byt arbetsmapp till där csproj ligger
+WORKDIR /app/Portfolio
+
+# Återställ dependencies för Portfolio.csproj
+RUN dotnet restore Portfolio.csproj
+
+# Builda projektet
+RUN dotnet publish -c Release -o out Portfolio.csproj
 
 # Runtime steg: kör appen i lättviktsbild
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 
 # Kopiera byggda filer från build-steget
-COPY --from=build /app/out .
+COPY --from=build /app/Portfolio/out ./
 
 # Exponera porten appen använder
 EXPOSE 5000
 
 # Starta appen
-ENTRYPOINT ["dotnet", "Portfolio.dll"]]
+ENTRYPOINT ["dotnet", "Portfolio.dll"]
