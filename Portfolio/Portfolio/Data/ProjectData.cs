@@ -65,7 +65,7 @@ namespace Portfolio.Data
              new Project {
                 Id = 6,
                 Title = "Hempbased",
-                Summary = "A 2D top down shooter game for the blockchain market",
+                Summary = "A 2D top down shooter game for the blockchain market.",
                 Description = "A start-up project for the blockchain market. A 2D game built to spread knowlegde use of industry hemp (Cancelled by the owners)",
                 MyContribution = "For the 4 months I worked with HempBased I was in charge of coding the AI and general game logic´.",
                 Images = new List<string> { "/images/hempbased/hemp.png", "/images/hempbased/hemp_2.png", "/images/hempbased/hemp_3.png" },
@@ -76,14 +76,14 @@ namespace Portfolio.Data
             new Project {
                 Id = 7,
                 Title = "Sorting Algorithms",
-                Summary = "A collection of sorting algorithms built with test driven development",
+                Summary = "A collection of sorting algorithms built with test driven development.",
                 Description = "A collection of sorting algorithms built with test driven development with xUnit",
                 MyContribution = "I created a binary heap for the heap search. I also created my own called HashBucketSort based on the idea of bucket sort but using dictionaries in a hash-like structure.",
                 Images = new List<string> {"/images/sorting/heap.png","/images/sorting/insertion.png"},
                 VideoUrl = "https://www.youtube.com/embed/NTkvghRfZJI?enablejsapi=1",
                 ExternalLink = "https://github.com/Chatzo/Sorting",
                 Tags = new List<string> {"C#", "Sorting algorithms", "Data structures", "xUnit", "Test driven development"}
-            }
+            } 
         };
     }
 }
