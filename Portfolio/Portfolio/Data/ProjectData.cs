@@ -20,6 +20,17 @@ namespace Portfolio.Data
             },
             new Project {
                 Id = 2,
+                Title = "EPD-Finder",
+                Summary = "A small program created to help employees at the company Ahlsell",
+                Description ="This is a hobby project me and a friend created in a week to help out employees at the company Ahlsell. It works by searching different websites for EPD's (enviromenal product documentation) for electrical products it lists them and give the option to download a list of links as an Excel-file.",
+                MyContribution = "I created most of the application and it scrapes the different websites for the product with an e-number and locates the product page, look for EPD documentations and finally presents the results. Some places it uses API-calls and other it scrapes the HTML pages.",
+                Images = new List<string> {"/images/epdfinder/epd_1.png", "/images/epdfinder/epd_2.png", "/images/epdfinder/epd_3.png"},
+                VideoUrl = "https://www.youtube.com/embed/qrnnltFJo7Y",
+                ExternalLink = "https://epdfinder.onrender.com/",
+                Tags = new List<string> {"C#", "ASP.NET", ".NET Core MVC", "HTML", "CSS","Bootstrap" ,"Javascript", "API-Calls", "OnRender Web-services" }
+            },
+            new Project {
+                Id = 3,
                 Title = "Gamma Movies",
                 Summary = "A fake movie webshop using .NET Core",
                 Description = "This is a 1-2 week school project. It uses .Net Core and CRUD operations. No logic added for payments and only fake log in use 'admin@admin.se' and 'password' if you want to try it.",
@@ -30,7 +41,7 @@ namespace Portfolio.Data
                 Tags = new List<string> { "C#", "ASP.NET", ".NET Core MVC", "HTML", "CSS", "Bootstrap", "Javascript", "SQL", }
             },
             new Project {
-                Id = 3,
+                Id = 4,
                 Title = "Glade",
                 Summary = "A 3D game created with Unreal Engine. Set in a Swedish magical forest.",
                 Description = "A 3D game created with Unreal Engine. Set in a Swedish magical forest with trolls, gnomes, mushrooms and a pinecone.",
@@ -41,7 +52,7 @@ namespace Portfolio.Data
                 Tags = new List<string> { "Unreal Engine", "C++", "UI/UX", "Pathfinding", "AI" }
             },
             new Project {
-                Id = 4,
+                Id = 5,
                 Title = "Flash & Crash",
                 Summary = "A 3D game for 2 players with huge controllers. Award winner!",
                 Description = "Winner of 'Player choice' at Swedish Game Awards 2014. A 3D game for 2 players with huge controllers, where players compete over an obstacle course. Extremely fun! The game was also showcased at Dreamhack and the Technical Museum in Stockholm",
@@ -52,7 +63,7 @@ namespace Portfolio.Data
                 Tags = new List<string> { "Swedish Game Awards","Unity Engine", "C#", "Level design"}
             },
             new Project {
-                Id = 5,
+                Id = 6,
                 Title = "Trollbunden",
                 Summary = "A difficult 2D puzzle game with an oldschool feel to it.",
                 Description = "A hobby game project that I worked on myself. its a difficult 2D puzzle game with an oldschool feel to it. The player controls dual characters a troll and a gnome(tomte) connected to eachother by the gnomes beard",
@@ -63,7 +74,7 @@ namespace Portfolio.Data
                 Tags = new List<string> { "Unity Engine", "C#", "2D Art", "2D Animation", "Game Design","Level design", "Puzzle design" }
             },
              new Project {
-                Id = 6,
+                Id = 7,
                 Title = "Hempbased",
                 Summary = "A 2D top down shooter game for the blockchain market.",
                 Description = "A start-up project for the blockchain market. A 2D game built to spread knowlegde use of industry hemp (Cancelled by the owners)",
@@ -74,7 +85,7 @@ namespace Portfolio.Data
                 Tags = new List<string> {"Unity", "C#", "2D Game", "Blockchain"}
             },
             new Project {
-                Id = 7,
+                Id = 8,
                 Title = "Sorting Algorithms",
                 Summary = "A collection of sorting algorithms built with test driven development.",
                 Description = "A collection of sorting algorithms built with test driven development with xUnit",
